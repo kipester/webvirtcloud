@@ -4,7 +4,7 @@
     {% if instance.proxy.instance.info.0 == 5 %}
         {% if instance.is_template %}
             <a href="{% url 'instances:instance' instance.id %}#clone" class="btn btn-sm btn-secondary" title="{% trans "Clone" %}">
-                {% bs_icon 'clone' %}
+                {% bs_icon 'copy' %}
             </a>
         {% else %}
             <a class="btn btn-sm btn-secondary" href="{% url 'instances:poweron' instance.id %}" onclick="showPleaseWaitDialog()" title="{% trans "Power On" %}">
